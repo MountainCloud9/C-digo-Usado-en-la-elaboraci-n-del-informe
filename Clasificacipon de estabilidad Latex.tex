@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}     % Para símbolos matemáticos ≤ ≥
+\renewcommand{\familydefault}{\sfdefault}
+\geometry{margin=2cm}
+
+\begin{document}
+\large
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{p{2.5cm} p{7.5cm}}
+\toprule
+\textbf{Índice de Cremado (IC, \%)} & \textbf{Clasificación de Estabilidad} \\
+\midrule
+IC = 0 & Completamente estable (sin separación de fases) \\
+$0 < \text{IC} < 10$ & Buena estabilidad (separación mínima, $<$10\% volumen) \\
+$10 \leq \text{IC} \leq 30$ & Estabilidad moderada (separación detectable, viable cosméticamente) \\
+IC $>$ 30 & Emulsión inestable (fase separada $>$30\%, no apta) \\
+\bottomrule
+\multicolumn{2}{c}{\footnotesize $\text{IC} = \frac{h_s}{h_e} \times 100$, donde $h_s$=altura suero, $h_e$=altura emulsión inicial.} \\
+\end{tabular}
+\end{table}
+
+\end{document}
