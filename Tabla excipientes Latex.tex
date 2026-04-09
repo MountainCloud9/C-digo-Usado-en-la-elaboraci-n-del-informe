@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}     % Para \toprule, \midrule, \bottomrule
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{helvet}       % Arial-like (Helvetica)
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}  % Fuente sans-serif (Arial)
+\geometry{margin=2cm}
+
+\begin{document}
+\large  % Tamaño grande para toda la tabla
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.5cm} c >{\raggedright\arraybackslash}p{5cm} c}
+\toprule
+\textbf{Componente} & \textbf{Proporción (\% p/p)} & \textbf{Función} & \textbf{Fase} \\
+\midrule
+Alcohol cetílico & 5 & Emulsionante, espesante y estabilizador de emulsiones O/W & Oleosa \\
+Ácido esteárico & 5 & Emoliente, regulador de viscosidad y coemulsionante & Oleosa \\
+Glicerina & 3 & Humectante (hidratante higroscópico) & Oleosa \\
+Tween 20 & 2 & Surfactante no iónico (emulsifica aceite en agua, HLB 16.7) & Acuosa \\
+Propilenglicol & 3 & Humectante (higroscópico, retiene humedad y emulsifica) & Acuosa \\
+Extracto CBS (bioactivo) & 2 & Antioxidante fenólico principal & Acuosa \\
+Benzoato de sodio & 0.5 & Conservante microbiológico & Acuosa \\
+Agua purificada & q.s.p. 100\% & Vehículo de la fase continua & Acuosa \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
